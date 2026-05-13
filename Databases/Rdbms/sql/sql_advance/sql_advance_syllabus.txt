@@ -1,0 +1,29 @@
+
+
+Advanced SQL
+    Indexes
+        Clustered and Non-clustered
+        Composite Indexes
+    Constraints: [CHECK, DEFAULT, NOT NULL, UNIQUE]
+    Temporary Tables
+    Stored Procedures
+    Functions:
+        Scalar Functions
+        Aggregate Functions
+        User-defined Functions
+    Triggers
+        BEFORE and AFTER Triggers
+        Row-level and Statement-level Triggers
+    Cursors
+    Transactions: [BEGIN, COMMIT, ROLLBACK, SAVEPOINT]
+    Exception Handling in SQL
+
+Query Optimization and Performance
+    Execution Plan
+    EXPLAIN / ANALYZE Commands
+    Index Optimization
+    Query Optimization Techniques
+    Joins vs Subqueries (Performance Comparison)
+    Partitioning and Sharding
+    Query Caching
+    Database Statistics

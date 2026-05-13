@@ -1,0 +1,139 @@
+Introduction to SQL
+    Structured Query Language (SQL) is the standard language used to interact with relational databases.
+     Mainly used to manage data.
+     Mainly works with Relational Databases (data is stored in the form of tables)
+
+    
+SQL Data Types
+    In SQL, each column must be assigned a data type that defines the kind of data it can store, such as integers, dates, text, or binary values. Choosing the correct data type is crucial for data integrity, query performance and efficient indexing.
+
+Benefits of using the right data type:
+    Memory-efficient storage
+    Accurate operations (e.g., calculations, sorting)
+    Consistency in stored values
+    Validation of input data
+
+++++++++++++++++++{ Data Types }++++++++++++++++++++++
+  1. Numeric data types
+     BIGINT [-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807]
+     INT [-2,147,483,648 to 2,147,483,647]
+     SMALLINT [-32,768 to 32,767]
+     TINYINT [0 to 255]
+     DECIMAL [-10^38 + 1 to 10^38 - 1]
+     NUMERIC [-10^38 + 1 to 10^38 - 1]
+     MONEY [-922,337,203,685,477.5808 to 922,337,203,685,477.5807]
+     SMALLMONEY [-214,748.3648 to 214,748.3647]
+     FLOAT {Approximate numeric values}[-1.79E+308 to 1.79E+308]
+     REAL {Similar to FLOAT, but with less precision}[-3.40E+38 to 3.40E+38]
+
+  2. Character and String data type
+     CHAR [The maximum length of 8000 characters. (Fixed-Length non-Unicode Characters)]
+     VARCHAR [The maximum length of 8000 characters. (Variable-Length non-Unicode Characters)]
+     VARCHAR(max) [The maximum length of 2^31 - 1 characters(SQL Server 2005 only). (Variable Length non-Unicode data)]
+     TEXT [The maximum length of 2,127,483,647 characters(Variable Length non-Unicode data)]
+
+  3. DATE & TIME Data types
+     DATE {stores the data of date (year, month, day)}[3 Bytes]
+     TIME {stores the data of time (hour, minute,second)}[3 Bytes]
+     DATETIME {store both the data and time (year, month, day, hour, minute, second)} [8 Bytes]
+
+  4. Binary Data Types {Binary data types are used to store binary data such as images, videos or other file types}
+     BINARY {fixed length binary data} [8000 bytes]
+     VARBINARY {	Variable-length binary data} [8000 bytes]
+     IMAGE {Stores binary data as images} [2,147,483,647 bytes]
+
+  5. BOOLEAN Data Types
+     The BOOLEAN data types are used to store logical values, typically TRUE or FALSE. It is commonly used for flag fields or binary conditions.
+
+  6. SPECIAL Data Types
+     XML Data Type: Used to store XML data and manipulate XML structures in the database
+     Spatial Data Type (Geometry): stores planar spatial data, such as points, lines, and polygons, in a database table.
+
+++++++++++++++++++{ Data Types Ends }++++++++++++++++++++++
+
+
+   Examples Query:
+      CREATE TABLE Emp1 (
+      EmpID INT PRIMARY KEY,
+      Name VARCHAR(50),
+      Country VARCHAR(50),
+      Age INT,
+      Mob VARCHAR(15));
+
+      INSERT INTO Emp1 VALUES
+      (1, 'Shubham',  'India', 23, '738479734'),
+      (2, 'Aman',     'Australia', 21, '436789555'),
+      (3, 'Naveen',   'Sri Lanka', 24, '348738478'),
+      (4, 'Aditya',   'Austria', 21, '328440934'),
+      (5, 'Nishant',  'Spain', 22, '732486792');
+
+      SELECT * FROM Emp1;
+
+      OUTPUT:
+
+      |EmpID |	Name   |  Country  |	Age |    mob    |
+      |  1   |Shubham |	 India	 | 23	 | 738479734 |
+      |  2   |Aman	 |  Australia|	21	 | 436789555 |
+      |  3   |Naveen	 |  Sri lanka|	24	 | 348738478 |
+      |  4   |Aditya	 |  Austria	 | 21	 | 328440934 |
+      |  5   |Nishant |	 Spain	 | 22	 | 732486792 |
+
+SQL Syntax and Clauses
+
+SQL CLAUSES :
+
+  1. WHERE [filter rows based on specific conditions]
+      Syntax:
+      SELECT column1, column2
+      FROM table_name
+      WHERE column_name operator value;
+
+      Query: SELECT * FROM Emp1 WHERE Age=24;
+      Output:
+      |EmpID |	Name   |  Country  |	Age |    mob    |
+      |  3   |Naveen	 |  Sri lanka|	24	 | 348738478 |
+
+      SELECT EmpID, Name, Country FROM Emp1 WHERE Age > 22
+      SELECT * FROM Emp1 WHERE Age BETWEEN 22 AND 24;
+      SELECT * FROM Emp1 WHERE Name LIKE 'S%'; 
+      SELECT * FROM Emp1 WHERE Name LIKE '%M%';
+      SELECT Name FROM Emp1 WHERE Age IN (21,23);
+
+  2. WITH [used to define temporary tables or result sets within a query]
+      Note: When a query with a WITH clause is executed, first the query mentioned within the  clause is evaluated and the output of this evaluation is stored in a temporary relation. Following this, the main query associated with the WITH clause is finally executed that would use the temporary relation produced.  
+
+      Quest: Finding Employees with Above-Average Salary.
+      EmployeeID	Name	   Salary
+      100011	   Smith	   50000
+      100022	   Bill	   94000
+      100027	   Sam	   70550
+      100845	   Walden	80000
+
+      Query:
+      WITH temporaryTable (averageValue) AS (SELECT AVG(Salary) FROM Employee)
+        SELECT EmployeeID,Name, Salary 
+        FROM Employee, temporaryTable 
+        WHERE Employee.Salary > temporaryTable.averageValue;
+
+      Output: 
+      EmployeeID	Name	   Salary
+      100022	   Bill	   94000
+      100845	   Walden	80000
+
+  3. HAVING
+  4. ORDER BY
+  5. GROUP BY
+  6. LIMIT
+  7. DISTINCT
+  8. FETCH
+  9. ALIASES
+
+
+
+
+    SQL Categories:
+        DDL (Data Definition Language)[CREATE, ALTER, DROP, TRUNCATE]
+        DML (Data Manipulation Language)[INSERT, UPDATE, DELETE]
+        DQL (Data Query Language)[SELECT]
+        DCL (Data Control Language)[GRANT, REVOKE]
+        TCL (Transaction Control Language)[COMMIT, ROLLBACK, SAVEPOINT]

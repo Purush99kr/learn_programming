@@ -1,0 +1,7 @@
+In this tutorial, we will learn the JAVA Programming language from basic to the advance level.
+For this we need to reach out some pre-requisite installations as mentioned below.
+
+ 1. JDK [Java Development Kit:`https://www.oracle.com/in/java/technologies/downloads/#jdk24-windows`] //simply browse, download and setup the oracle link JDK as per the Operating System(Window, MAC, etc)
+ 2. Code Editor [
+    1. IntelliJ IDEA [`https://www.jetbrains.com/idea/download/?section=windows`], Community version.
+ ]

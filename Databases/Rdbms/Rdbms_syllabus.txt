@@ -1,0 +1,164 @@
+1. Introduction to Databases
+    Data and Information
+    Database Concepts
+    DBMS vs RDBMS
+    Data Models (Hierarchical, Network, Relational, Object-oriented)
+    Database Terminologies (Schema, Instance, Tuple, Attribute, Domain)
+    Advantages of DBMS/RDBMS
+
+2. Relational Model
+    Relational Data Structure
+    Tables (Relations), Rows (Tuples), Columns (Attributes)
+    Relational Schema
+    Degree and Cardinality
+    Keys:
+        Primary Key
+        Candidate Key
+        Alternate Key
+        Foreign Key
+        Composite Key
+    Relationships:
+        One-to-One
+        One-to-Many
+        Many-to-Many
+    Integrity Constraints
+        Entity Integrity
+        Referential Integrity
+        Domain Integrity
+
+3. SQL – Basics
+    Introduction to SQL
+    SQL Data Types
+    SQL Syntax and Clauses
+    SQL Categories:
+        DDL (Data Definition Language)[CREATE, ALTER, DROP, TRUNCATE]
+        DML (Data Manipulation Language)[INSERT, UPDATE, DELETE]
+        DQL (Data Query Language)[SELECT]
+        DCL (Data Control Language)[GRANT, REVOKE]
+        TCL (Transaction Control Language)[COMMIT, ROLLBACK, SAVEPOINT]
+
+4. SQL – Intermediate Queries
+    Filtering Data (WHERE, AND, OR, IN, BETWEEN, LIKE)
+    Sorting and Limiting Data (ORDER BY, LIMIT/TOP)
+    Aggregate Functions (COUNT, SUM, AVG, MIN, MAX)
+    Grouping Data (GROUP BY, HAVING)
+    Aliases (AS)
+    Joins: [INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN, CROSS JOIN, SELF JOIN]
+    Subqueries: [Single Row, Multiple Row, Correlated]
+    Set Operators: [UNION, INTERSECT, EXCEPT/MINUS]
+    Views: [CREATE VIEW, UPDATE VIEW, DROP VIEW]
+
+5. Database Design and Normalization
+    Database Design Process
+    Entity-Relationship (ER) Model
+    Entities, Attributes, Relationships
+    ER Diagrams
+    Mapping ER Diagrams to Tables
+    Functional Dependencies
+    Normalization: [1NF, 2NF, 3NF, BCNF]
+    Denormalization
+
+6. Advanced SQL
+    Indexes
+        Clustered and Non-clustered
+        Composite Indexes
+    Constraints: [CHECK, DEFAULT, NOT NULL, UNIQUE]
+    Temporary Tables
+    Stored Procedures
+    Functions:
+        Scalar Functions
+        Aggregate Functions
+        User-defined Functions
+    Triggers
+        BEFORE and AFTER Triggers
+        Row-level and Statement-level Triggers
+    Cursors
+    Transactions: [BEGIN, COMMIT, ROLLBACK, SAVEPOINT]
+    Exception Handling in SQL
+
+7. Query Optimization and Performance [Advanced]
+    Execution Plan
+    EXPLAIN / ANALYZE Commands
+    Index Optimization
+    Query Optimization Techniques
+    Joins vs Subqueries (Performance Comparison)
+    Partitioning and Sharding
+    Query Caching
+    Database Statistics
+
+8. Database Security and Access Control
+    User Roles and Permissions
+    GRANT and REVOKE Commands
+    Authentication and Authorization
+    Encryption (Data-at-Rest / In-Transit)
+    SQL Injection Prevention
+    Backup and Recovery
+    Import and Export Operations
+
+9. Transactions and Concurrency Control
+    Transactions and ACID Properties
+    Concurrency Control Mechanisms
+    Locks:
+        Shared Lock
+        Exclusive Lock
+    Deadlocks and Prevention
+    Isolation Levels:
+        READ UNCOMMITTED
+        READ COMMITTED
+        REPEATABLE READ
+        SERIALIZABLE
+    Commit and Rollback Handling
+
+10. Advanced Database Concepts
+    Distributed Databases
+    Data Replication
+    Fragmentation
+    Data Warehousing
+        OLAP vs OLTP
+    Materialized Views
+    Stored Procedures vs Triggers (Comparison)
+    PL/SQL / T-SQL Programming
+    Database Tuning
+    Cloud Databases
+        AWS RDS
+        Google Cloud SQL
+        Azure SQL
+
+11. Tools and Technologies
+    MySQL Workbench
+    PostgreSQL & pgAdmin
+    SQLite
+    DBeaver
+    SQL Server Management Studio (SSMS)
+    DataGrip
+    Command-line SQL Tools
+
+12. Application Integration
+    Connecting RDBMS with Programming Languages
+        Node.js (MySQL / PostgreSQL)
+        Python (MySQL Connector / psycopg2)
+        Java (JDBC)
+    ORM Tools
+        Sequelize
+        Prisma
+        TypeORM
+    Query Builders (Knex.js, Drizzle)
+    Database Migrations
+    API + Database Integration
+
+13. Practical Implementation and Projects
+    Library Management System
+    Employee Payroll System
+    College Management System
+    Inventory Management System
+    E-commerce Database
+    Hospital Management System
+    Vehicle Tracking Database
+
+14. Interview & Real-world Preparation
+    Common SQL Query Patterns
+    Advanced Query Challenges (Joins, Window Functions)
+    Normalization vs Denormalization Scenarios
+    Database Design Case Studies
+    SQL Problem Solving (LeetCode, HackerRank)
+    Performance Tuning Interview Questions

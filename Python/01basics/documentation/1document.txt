@@ -1,0 +1,77 @@
+Date: 24-08-2025
+This file contains the following topics:
+    1. Python Versions
+    2. Basic commands and System Folder creation
+    3. Introduction to the PVM, Python Virtual Machine
+    4. Data Types in Python
+    5. Memory Allocations, reference and objects
+    6. Errors and Debugs
+
+[] ----------> Brackets
+{} ----------> Braces or Curly Braces
+() ----------> Parenthesis
+
+This folder contains the basic programming of the python language.
+There are different modules(files) which is being imported and executed inside the 'index.py'
+
+Python Versions are listed below:
+
+    1. Cpython ---------> Standard python version or default version
+    2. Jython(Jpython) ----------> Being used with JAVA
+    3. IRAN Python
+    4. Stackless
+    5. PyPy
+
+File execution command: 'py or python "filename with .py extention"', eg. (py index.py), in the terminal or command line inside the folder directory.
+Module importing syntax in python: `from "module name" import "methods(functions)" as "any understandable short name(optional)"`
+
+----------------------------{ PVM (Python Virtual Machine{Platform Independent}) }---------------
+
+Python code is compiled to the byte code(not a machine code) then is executed by using PVM(Python Virtual Machine{Platform Independent}), also called as Interpreted language(as it executed linewise by the PVM)
+Byte code runs faster
+
+-------------------------------{ __pycache__ & .pyc }---------------------------------
+.pyc --------> compiled binaries files {frozen Binaries}
+__pycache__ -------------> {System Folder} Python generated folder during code compilation, understandable and being used by the python internally.
+
+-------------------------------------{ Module Reload method }---------------------------------
+
+Module Reload method: When we add anything inside a module we need to import that module again inside our main using module in order to use the additional features, annoying. We can overcome from this re import by using 'reload' method.
+
+        syntax: 'from importlib import reload'
+                reload("module_name without .py extention")
+
+-------------------------------------{ Data Types or Object Types in Python }--------------------
+
+Data Types in Python: all are present as an object and its reference is used, in python variable don't have any data types only object(reference) has the data types.
+
+for example:
+    a = 4      # No data types for variable 'a', inside the memory object '4' has data types[Number]
+    b = 'hello'  # No data types for 'b', inside the memory object 'hello' has data types[String]
+
+    None: None  # Empty object
+    Functions, Modules, Classes
+    File: open('logs.txt'), # file handlings
+    Advance: Decorators, Generators, Iterators, MetaProgramming
+
+Mutable: [List, Set, Dictionary, ByteArray, Array] {can be modified}
+
+    List: [1, 2, [3.5, 'a', 'b'], 3, 4, 5]          # indexing begins from 0
+    Set: {'a', 'b', 3, 4}, set('abc')               # indexing begins from 0
+    Dictionary: {'food':'rice', 'item':'bharat', 'item2':'hindustan'}
+
+Immutable: [Integers, Floating-point numbers, Boolean, Strings, Tuples, Frozen set, Bytes] {memory reference can not be changed, memory reference of an object can be automatically deleted by the garbage collector if is not in use}
+
+    Number: 1234, 3.123, 3+4j, 2i, 1j, 2i+4j, 0b111, Decimal(), Fraction()
+    Boolean: True, False [0 or 1]
+    String: 'abc', "John's", b'a\x01c', u'sp\xc4m'
+    Tuple: (1, 2, 3, 'spam', 'taste', 'yum', 'U')
+
+--------------------------------------{ Memory Allocations }-------------------------------------
+
+Memory Allocations: Object reference Allocations
+
+--------------------------------------{ Errors & Debugs }----------------------------------------
+
+KeyError -----> The provided key is not present in the Dictionary.
+

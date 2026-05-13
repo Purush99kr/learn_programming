@@ -1,0 +1,292 @@
+Python Tutorial Content [ Following are the things you should aware of about python programming ]
+
+Python Origin
+
+    Python Features
+    Advantages of Python
+    History of Python
+    Python Applications
+    Hello World Program in Python
+    How to Install Python?
+    Python Syntax
+    Python Keywords
+    Python Literals
+    Python Operators
+    Python Comments
+    What is Python
+
+Python Variable & Data Type
+
+    Python Variables
+    Python Data Types
+    Python Numbers
+    Type Casting in Python
+    Python Strings
+    Python String Methods
+    Python Boolean
+
+Python Control Statements
+
+    Python If else
+    Python Loops
+    Python For Loop
+    Python While Loop
+    Python Continue
+    Python Break
+    Python Pass
+    Difference between Break and Continue in Python
+    Difference Between For Loop and While Loop in Python
+    Control Statements in Python
+
+Python Data Structures
+
+    Python Lists
+    Python List Methods
+    Python Tuples
+    Python Tuple Methods
+    Difference between List and Tuple
+    Python Sets
+    Python Set Methods
+    Python Dictionary
+    Python Dictionary Methods
+    Difference between List and Dictionary in Python
+    Difference between List, Set, Tuple, and Dictionary in Python
+    Difference between Set and Dictionary in Python
+    Python Data Structures
+
+Python Functions
+
+    Python Functions
+    Python Built-in Functions
+    Python Lambda Functions
+    def Function in Python
+
+Python Modules
+
+    Python Modules
+    Python List Comprehension
+    Python Collection Module
+    Python Math Module
+    Python OS Module
+    Python Random Module
+    Python Statistics Module
+    Python Sys Module
+
+Python OOPs
+
+    Python OOPs Concepts
+    Python Classes and Objects
+    Python Constructors
+    Python Inheritance
+    Abstraction in Python
+    Encapsulation in Python
+    Access Modifiers in Python
+    Method Overloading in Python
+
+Python Exception Handling
+
+    Exception Handling in Python
+    How to Catch Multiple Exceptions in Python?
+    Python Raise an Exception
+    Finally Keyword in Python
+    Python Built-in Exceptions
+
+Python File Handling
+
+    Python Files I/O
+    Python Read CSV File
+    Python Write CSV File
+    Read Excel File
+    Write Excel File
+    Python JSON
+    Context Manager in Python
+
+Python Searching & Sorting
+
+    Searching algorithms in Python
+    Linear Search in Python
+    Binary Search in Python
+    Sorting Algorithms in Python
+    Bubble Sort in Python
+    Insertion Sort in Python
+    Selection Sort in Python
+    Merge Sort in Python
+    Quick Sort in Python
+    Heap Sort in Python
+    Tim Sort in Python
+
+Python Advanced Topics
+
+    Python Decorator
+    Python Generators
+    Python Multiprocessing
+    Python Regex
+    Python Sending Email
+    Python Date
+    Python Assert
+    Python IDEs
+    Python Arrays
+    Command Line Arguments
+    Python Magic Method
+    Python Stack & Queue
+    PySpark MLlib
+    Web Scraping Using Python
+    Python Itertools
+    How to Calculate Distance between Two Points using GEOPY
+    Gmail API in Python
+    How to Plot the Google Map using folium package in Python
+    Grid Search in Python
+    Python High Order Function
+    nsetools in Python
+    Python program to find the nth Fibonacci Number
+    Python OpenCV object detection
+    Python SimpleImputer module
+    Second Largest Number in Python
+    Tower of Hanoi Puzzle Using Python
+
+Python MySQL
+
+    Python MySQL Environment Setup
+    Database Connection
+    Creating New Database
+    Creating Tables
+    Insert Operation
+    Read Operation
+    Update Operation
+    Join Operation
+    Performing Transactions
+
+Python MongoDB
+Python SQLite
+
+Python Built-in Functions
+
+    Python abs()
+    Python all()
+    Python bin()
+    Python bool()
+    Python bytes()
+    Python callable()
+    Python compile()
+    Python exec()
+    Python sum()
+    Python any()
+    Python ascii()
+    Python bytearray()
+    Python eval()
+    Python float()
+    Python format()
+    Python frozenset()
+    Python getattr()
+    Python globals()
+    Python hasattr()
+    Python iter()
+    Python len()
+    Python list()
+    Python locals()
+    Python map()
+    Python memoryview()
+    Python object()
+    Python open()
+    Python ord()
+    Python pow()
+    Python print()
+    Python reversed()
+    Python range()
+    Python round()
+    Python str()
+    Python tuple()
+    Python type()
+    Python vars()
+    Python zip()
+    Python chr()
+    Python complex()
+    Python delattr()
+    Python dir()
+    Python divmod()
+    Python enumerate()
+    Python dict()
+    Python filter()
+    Python hash()
+    Python help()
+    Python min()
+    Python set()
+    Python hex()
+    Python id()
+    Python setattr()
+    Python slice()
+    Python sorted()
+    Python next()
+    Python input()
+    Python int()
+    Python isinstance()
+    Python oct()
+
+Python String functions
+
+    capitalize()
+    casefold()
+    center(width ,fillchar)
+    count(string,begin,end)
+    encode()
+    endswith(suffix ,begin=0,end=len(string))
+    expandtabs(tabsize = 8)
+    find(substring ,beginIndex, endIndex)
+    format(value)
+    index(subsring, beginIndex, endIndex)
+    isalnum()
+    isalpha()
+    isdecimal()
+    isdigit()
+    isidentifier()
+    islower()
+    isnumeric()
+    isprintable()
+    isupper()
+    isspace()
+    istitle()
+    isupper()
+    join(seq)
+    ljust(width[,fillchar])
+    lower()
+    lstrip()
+    partition()
+    Python String replace() Method
+    rfind(str,beg=0,end=len(str))
+    rindex(str,beg=0,end=len(str))
+    rjust(width,[,fillchar])
+    rstrip()
+    rsplit(sep=None, maxsplit = -1)
+    split(str,num=string.count(str))
+    splitlines(num=string.count('\n'))
+    startswith(str,beg=0,end=len(str))
+    swapcase()
+    translate(table,deletechars = '')
+    upper()
+    zfill(width)
+    rpartition()
+
+Python List
+
+    Python List append() Method
+    Python List clear() Method
+    Python List count() Method
+    Python List pop() Method
+    Python List insert(i,x) Method
+    Python list index() method
+    Python List sort() Method
+    Python List copy() Method
+
+Python Dictionary
+
+    Python Dictionary pop() Method
+    Python Dictionary values() Method
+    Python Dictionary setdefault() Method
+    Python Dictionary clear() Method
+    Python Dictionary fromkeys() Method
+    Python Dictionary keys() Method
+
+Plotly
+
+    Plotly with Matplotlib and Chart Studio
+    Plotly with Pandas and Cufflinks

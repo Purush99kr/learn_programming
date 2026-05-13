@@ -1,0 +1,37 @@
+
+
+SQL – Intermediate Queries
+    Filtering Data (WHERE, AND, OR, IN, BETWEEN, LIKE)
+    Sorting and Limiting Data (ORDER BY, LIMIT/TOP)
+    Aggregate Functions (COUNT, SUM, AVG, MIN, MAX)
+    Grouping Data (GROUP BY, HAVING)
+    Aliases (AS)
+    Joins: [INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN, CROSS JOIN, SELF JOIN]
+    Subqueries: [Single Row, Multiple Row, Correlated]
+    Set Operators: [UNION, INTERSECT, EXCEPT/MINUS]
+    Views: [CREATE VIEW, UPDATE VIEW, DROP VIEW]
+
+
+Database Design and Normalization
+    Database Design Process
+    Entity-Relationship (ER) Model
+    Entities, Attributes, Relationships
+    ER Diagrams
+    Mapping ER Diagrams to Tables
+    Functional Dependencies
+    Normalization: [1NF, 2NF, 3NF, BCNF]
+    Denormalization
+
+Transactions and Concurrency Control
+    Transactions and ACID Properties
+    Concurrency Control Mechanisms
+    Locks:
+        Shared Lock
+        Exclusive Lock
+    Deadlocks and Prevention
+    Isolation Levels:
+        READ UNCOMMITTED
+        READ COMMITTED
+        REPEATABLE READ
+        SERIALIZABLE
+    Commit and Rollback Handling
