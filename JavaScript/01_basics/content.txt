@@ -1,0 +1,11 @@
+
+Phase 1: JavaScript Fundamentals (Foundation Layer)[Goal: Understand how JS actually works]
+        Variables (let, const)
+        Data Types (primitive & reference)
+        Operators & Expressions
+        Conditional Statements (if, switch)
+        Loops (for, while, for...of)
+        Functions (declaration, expression, arrow)
+        Scope (global, block, function)
+        Hoisting
+        Type Coercion
