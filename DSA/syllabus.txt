@@ -1,0 +1,263 @@
+COMPLETE DSA ROADMAP (Beginner → Advanced)
+
+Language Recommendation
+    Best choices:
+        JavaScript ✅ (your current stack)
+        C++
+        Java
+        Python
+
+BEST PLATFORMS FOR PRACTICE
+    Coding Practice
+        LeetCode ⭐
+        Codeforces
+        GeeksforGeeks
+        HackerRank
+        Coding Ninjas Studio
+
+++++++++++++++++++++++++++++++++++{Syllabus Begins}++++++++++++++++++++++++++++++
+
+PHASE 1 — Programming Foundations [Before DSA, become comfortable with:]
+    Core Programming Concepts
+        Variables
+        Data types
+        Operators
+        Conditions
+        Loops
+        Functions
+        Recursion basics
+        Arrays & strings
+        Objects
+
+PHASE 2 — Complexity Analysis [MUST LEARN FIRST]
+    Time Complexity
+        Big O
+        Big Theta
+        Big Omega
+    Common Complexities
+        O(1)
+        O(log n)
+        O(n)
+        O(n log n)
+        O(n²)
+        O(2ⁿ)
+    Space Complexity
+        Recursion Tree Analysis
+        Asymptotic Analysis
+
+PHASE 3 — Arrays & Strings
+    Arrays
+        Traversal
+        Insertion
+        Deletion
+        Rotation
+        Prefix sum
+        Sliding window
+        Two pointers
+    String Algorithms
+        Palindrome
+        Anagram
+        Frequency count
+        Pattern matching
+        String hashing basics
+    Important Patterns
+        Sliding Window
+        Two Pointer
+        HashMap usage
+
+PHASE 4 — Recursion & Backtracking
+    Recursion
+        Base condition
+        Stack behavior
+        Recursive trees
+    Problems
+        Factorial
+        Fibonacci
+        Power
+        Subsequences
+    Backtracking
+        N Queens
+        Sudoku Solver
+        Rat in Maze
+        Combination Sum
+        Permutations
+
+PHASE 5 — Linked Lists
+    Types
+        Singly
+        Doubly
+        Circular
+    Operations
+        Insert
+        Delete
+        Reverse
+        Detect cycle
+        Merge
+        Middle node
+    Advanced
+        Floyd Cycle Detection
+        LRU Cache
+
+PHASE 6 — Stack & Queue
+    Stack
+        Monotonic stack
+        Expression evaluation
+        Next greater element
+    Queue
+        Circular queue
+        Deque
+        Priority queue
+    Important Applications
+        Browser history
+        Undo/redo
+        BFS
+
+PHASE 7 — Hashing
+    Learn
+        HashMap
+        HashSet
+        Collision basics
+    Problems
+        Two Sum
+        Frequency counting
+        Longest substring
+
+PHASE 8 — Searching & Sorting
+    Searching
+        Linear Search
+        Binary Search
+        Binary Search on Answers
+        Sorting
+        Bubble
+        Selection
+        Insertion
+        Merge Sort
+        Quick Sort
+        Heap Sort
+    Advanced Concepts
+        Stability
+        In-place sorting
+
+PHASE 9 — Trees
+    Binary Trees
+        Traversals
+        Inorder
+        Preorder
+        Postorder
+        Level order
+        BST
+        Insert/Delete/Search
+    Advanced
+        Lowest Common Ancestor
+        Diameter
+        Balanced tree
+        Serialization
+
+PHASE 10 — Heap / Priority Queue
+    Learn
+        Min Heap
+        Max Heap
+    Problems
+        K largest elements
+        Merge K sorted arrays
+        Median finder
+
+PHASE 11 — Graphs (VERY IMPORTANT)
+    Basics
+        Vertices
+        Edges
+        Directed/Undirected
+        Traversals
+        BFS
+        DFS
+    Advanced Algorithms
+        Dijkstra
+        Bellman Ford
+        Floyd Warshall
+        Kruskal
+        Prim’s
+        Topological Sort
+        Union Find / DSU
+
+PHASE 12 — Dynamic Programming (Most Important)
+    Concepts
+        Memoization
+        Tabulation
+        State transition
+        Patterns
+        Fibonacci DP
+        Knapsack
+        LIS
+        LCS
+        Matrix DP
+        Partition DP
+    Advanced DP
+        Bitmask DP
+        Digit DP
+
+PHASE 13 — Greedy Algorithms
+    Learn
+    Activity selection
+    Huffman coding
+    Interval problems
+
+PHASE 14 — Tries
+    Learn
+    Prefix search
+    Word dictionary
+    Autocomplete
+
+PHASE 15 — Segment Trees & Fenwick Trees
+    Advanced competitive programming + interviews.
+
+PHASE 16 — Advanced Topics
+    Learn
+    Bit Manipulation
+    String Algorithms
+    KMP
+    Rabin Karp
+    Network Flow basics
+    Computational Geometry basics
+
+++++++++++++++++++++++++++++++++++++++++{Syllabus End}++++++++++++++++++++++++++++++
+
+MOST IMPORTANT DSA PATTERNS.These patterns build REAL logic.
+
+    Must Master:
+        Sliding Window
+        Two Pointer
+        Binary Search
+        Prefix Sum
+        DFS/BFS
+        Backtracking
+        Dynamic Programming
+        Greedy
+        Heap
+        Monotonic Stack
+
+
+BEST LEARNING PLAN (6 Months)
+    Month 1
+        Complexity
+        Arrays
+        Strings
+        Basic recursion
+    Month 2
+        Linked List
+        Stack
+        Queue
+        Hashing
+    Month 3
+        Sorting
+        Binary Search
+        Trees
+    Month 4
+        Graphs
+        Heap
+        Greedy
+    Month 5
+        Dynamic Programming
+    Month 6
+        Advanced DSA
+        Mock interviews
+        Contest solving
