@@ -54,3 +54,37 @@ function userLoginMessage(username = "Guest") {
 userLoginMessage("Nikhil"); // This will return "Welcome back, Nikhil!", but it will not log anything to the console because we are not using console.log() to display the result.
 console.log(userLoginMessage("Nikhil")); // This will log "Welcome back, Nikhil!" to the console.
 console.log(userLoginMessage()); // This will log "Please provide a username." to the console.When we remove the 'Guest' default value from the function definition parameter.
+
+// +++++++++++++++++++++++++++++{Rest Operator}+++++++++++++++++++++++++++++++
+function calculateCartPrice(...num) {
+  return num;
+}
+console.log(calculateCartPrice(10, 20, 30)); // This will log [10, 20, 30], which is an array containing the values passed as arguments to the function. The rest operator (...) allows us to collect all the remaining arguments into an array, making it easier to work with a variable number of arguments in the function.
+
+// +++++++++++++++++++++++++++++++{Passing Objects to Functions}+++++++++++++++++++++++++++++++
+
+const user = {
+  name: "Nikhil",
+  age: 25,
+  city: "New Delhi",
+};
+
+function handleOobject(obj) {
+  console.log(`Name: ${obj.name}, Age: ${obj.age}, City: ${obj.city}`);
+}
+handleOobject(user); // This will log "Name: Nikhil, Age: 25, City: New Delhi" to the console. Here, we are passing the user object as an argument to the handleObject function, which then accesses the properties of the object and logs them in a formatted string.
+
+handleOobject({
+  name: "Amit",
+  age: 30,
+  city: "Mumbai",
+});
+
+// +++++++++++++++++++++++++++++++{Passing arrays to Functions}+++++++++++++++++++++++++++++++
+
+const numbers = [1, 2, 3, 4, 5];
+
+function someArray(arr) {
+  return arr[1];
+}
+console.log(someArray(numbers)); // This will log 2, which is the second element of the numbers array.
