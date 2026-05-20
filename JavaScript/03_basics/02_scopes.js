@@ -75,6 +75,7 @@ if (true) {
 //++++++++++++++++++++++{Function Declaration concepts }++++++++++++++++++++
 
 //method 1
+
 function typeOne(num) {
   return num + 10;
 }
