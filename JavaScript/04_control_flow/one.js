@@ -43,8 +43,8 @@ const loggedInFromEmail = true;
 
 if (userLoggedIn && debitCard) {
   if (loggedInFromEmail) {
-    console.log("Allow User to buy courses");
+    console.log("Allow User to buy courses from the playlists");
   }
 } else {
-  console.log("Invalid user");
+  console.log("Invalid user, use proper credentials");
 }

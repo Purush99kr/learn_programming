@@ -53,7 +53,9 @@ switch (month) {
     break;
 
   default:
-    console.log("Enter the correct value starting from 1 to 12");
+    console.log(
+      "Enter the correct value starting from 1 to 12, to get month's name.",
+    );
 }
 
 // const prompt = require("prompt-sync")();
