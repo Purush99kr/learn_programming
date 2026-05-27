@@ -1,0 +1,34 @@
+In this we will learn about the DOM(Document Object Model) : Which means a model which is created using the collection of objects and attributes.
+
+Inside this file 'one.html', we have a code of the web page. The page is created using collection of objects, following the diagram
+
+<!DOCTYPE html> : It denotes HTML5 version of HTML
+
+The web page begins from HTML tag. And mainly contains HEAD and BODY
+    <html>
+        <head>
+            {Other objects and tags}
+        </head>
+        <body>
+            {Other objects and tags}
+        </body>
+    </html>
+
+
+# Inside web browser, the 'window'[console.log(window) or window]{browser console} is the biggest object.
+# Inside object: window, we use object: document.[console.log(window.document) or document]{browser console} 
+# In order to make any modifcations inside the web pages now we will consider object : document.
+
+//Selector methods are listed below:
+  
+  1. document.getElementByID('Id_name_here')
+    -> document.getElementByID('Id_name_here').id    // select the id
+    -> document.getElementByID('Id_name_here').className    // select the class
+    -> document.getElementByID('Id_name_here').getAttribute('id') or any attributes   // select the attributes
+    -> document.getElementByID('Id_name_here').setAttribute('class', 'class_name_to_set')[try to prevent previous value]
+    -> document.getElementByID('Id_name_here').innerHTML = <h1>Modify the Heading contents</h1>
+
+  2. document.getElementByClassName('Id_name_here')
+  3. textContent  // getting all the actual available text [jo bhi actual mei present hai sb dikhega]
+  4. innerText   // getting Only actual visible text [don't get the hidden text, hided using CSS]
+  5. innerHTML   // getting all available text including html, if any html present inside. [span tag inside h1 tag]
