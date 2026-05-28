@@ -28,7 +28,30 @@ The web page begins from HTML tag. And mainly contains HEAD and BODY
     -> document.getElementByID('Id_name_here').setAttribute('class', 'class_name_to_set')[try to prevent previous value]
     -> document.getElementByID('Id_name_here').innerHTML = <h1>Modify the Heading contents</h1>
 
-  2. document.getElementByClassName('Id_name_here')
+  2. document.getElementByClassName('class_name_here')
   3. textContent  // getting all the actual available text [jo bhi actual mei present hai sb dikhega]
   4. innerText   // getting Only actual visible text [don't get the hidden text, hided using CSS]
   5. innerHTML   // getting all available text including html, if any html present inside. [span tag inside h1 tag]
+  6. querySelector()   //provide only the very first single item selected from the collection available
+    -> querySelector('#Id_name_here')
+    -> querySelector('.class_name_here')
+    -> querySelector('h1')
+    -> querySelector('ul')
+    -> querySelector("input[type = 'password']")
+  
+  7. querySelectorAll()  //provide all the selected item available
+    -> It provide a NodeList(3)[li,li,li], similar to array but not an array.
+    -> We can 'forEach( (item) => (item.lenghth) )' loop for data extraction from the NodeList(3)[li,li,li]
+
+
+//Not an Array items
+    1. NodeList(3)[li,li,li]               // can use forEach() loop for this
+    2. HTMLCollection(4)[li,li,li,li]        // No loop for this
+
+
+//Conversion into an Array
+    1. const arrayNode = Array.from(NodeList)
+        -> Now, arrayNode contains the array form of NodeList
+    
+    2. const arrayHtml = Array.from(HTMLCollection)
+        -> Now, arrayHtml contains the array form of HTMLCollection

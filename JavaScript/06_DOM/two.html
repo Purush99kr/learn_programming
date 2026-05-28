@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DOM Learning| Part 2</title>
+    <style>
+      .bg {
+        background-color: #2f2f2f;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body class="bg">
+    <div class="parent">
+      <div class="day">Monday</div>
+      <div class="day">Tuesday</div>
+      <div class="day">Wednesday</div>
+      <div class="day">Thursday</div>
+    </div>
+  </body>
+  <script>
+    const parent = document.querySelector(".parent");
+    console.log(parent);
+    console.log(parent.children); //all days [HTMLCollection]
+    console.log(parent.children[2]); //wednesday
+    console.log(parent.children[0]); //Monday
+    console.log(parent.children[3].innerHTML); //thursday
+
+    // looping
+
+    for (let i = 0; i < parent.children.length; i++) {
+      console.log(parent.children[i].innerHTML);
+    }
+
+    parent.children[3].style.color = "red";
+    parent.children[0].style.color = "yellow";
+
+    //JS Properties
+    console.log(parent.firstElementChild); //Monday
+    console.log(parent.lastElementChild); //Thursday
+
+    //child to parent movement
+    const dayOne = document.querySelector(".day");
+    console.log(dayOne);
+    console.log(dayOne.parentElement);
+    console.log(dayOne.nextElementSibling);
+
+    console.log("NODES: ", parent.childNodes);
+  </script>
+</html>

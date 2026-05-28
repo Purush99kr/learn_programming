@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DOM Learning | Part 4</title>
+    <style>
+      .bg {
+        background-color: #2f2f2f;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body class="bg">
+    <ul class="language">
+      <li>JavaScript</li>
+    </ul>
+  </body>
+  <script>
+    function addLanguage(langName) {
+      const li = document.createElement("li");
+      li.innerHTML = `${langName}`;
+      document.querySelector(".language").appendChild(li);
+    }
+    addLanguage("Python");
+    addLanguage("Java");
+
+    //inserting list optimizingly{Best approach}
+    function addOptimizedLanguage(langName) {
+      const li = document.createElement("li");
+      li.appendChild(document.createTextNode(langName));
+      document.querySelector(".language").appendChild(li);
+    }
+    addOptimizedLanguage("golang");
+    addOptimizedLanguage("ruby");
+
+    //Editing inside the elements: {replace Python with Node}
+    const li = document.querySelector("li:nth-child(2)");
+    console.log(li);
+    // li.innerHTML = "Node";  // less optimal
+    const newText = document.createElement("li");
+    newText.textContent = "Node";
+    // li.replaceWith(newText);   //value replaced
+
+    //Second Edit {Not in practice}
+    const firstLang = document.querySelector("li:first-child");
+    console.log(firstLang);
+    firstLang.outerHTML = "<li>TypeScript</li>";
+
+    //remove
+    const lastLang = document.querySelector("li:last-child");
+    console.log(lastLang);
+    lastLang.remove();
+  </script>
+</html>
