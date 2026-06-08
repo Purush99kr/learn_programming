@@ -32,16 +32,15 @@ form.addEventListener("submit", (e) => {
   }
 });
 
-// const resetBtn = document.querySelector("#reset");
-// resetBtn.addEventListener("click", (e) => {
-//     //clear input fileds
-//     document.querySelector('#height').value = "";
-//     document.querySelector('#weight').value = "";
+const resetBtn = document.querySelector("#reset");
+resetBtn.addEventListener("click", (e) => {
+  //clear input fileds
+  document.querySelector("#height").value = "";
+  document.querySelector("#weight").value = "";
 
-//     //clear results
-//     document.querySelector('#results').innerHTML = "";
+  //clear results
+  document.querySelector("#results").innerHTML = "";
 
-//     //clear guide
-//     document.querySelector(#guide).innerHTML = "";
-
-// });
+  //clear guide
+  document.querySelector("#guide").innerHTML = "";
+});
