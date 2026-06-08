@@ -46,5 +46,5 @@ startBtn.addEventListener("click", startChangingColor);
 //event for stop button
 stopBtn.addEventListener("click", stopChangingColor);
 
-//event for reset button
+//event of reset
 resetBtn.addEventListener("click", resetChangingColor);
