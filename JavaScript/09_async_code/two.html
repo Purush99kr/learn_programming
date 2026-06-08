@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async Code Concepts | two</title>
+    <style>
+      body {
+        background-color: #2f2f2f;
+        color: #fff;
+      }
+      .stop {
+        background-color: red;
+        color: #fff;
+        cursor: pointer;
+      }
+      .start {
+        cursor: pointer;
+      }
+      .reset {
+        cursor: pointer;
+        background-color: #69ca08;
+        color: #fff;
+      }
+      #main {
+        padding: 5px;
+        margin-top: 5px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+      }
+      #container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+      #buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 20px;
+      }
+      #content {
+        margin-left: 20px;
+        width: 650px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+      }
+      #title {
+        text-align: center;
+        color: red;
+      }
+      #logs {
+        height: 300px;
+        overflow-y: auto;
+        border: 1px solid white;
+        padding: 10px;
+      }
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <h1 id="title">Displaying Changing Text as a clock timer</h1>
+      <div id="container">
+        <div id="buttons">
+          <button id="start" class="start">Start</button>
+          <button id="stop" class="stop">Stop</button>
+          <button id="reset" class="reset">Reset</button>
+        </div>
+        <div id="content">
+          <h1 id="name">JavaScript is a single-threaded language !</h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="main">
+      <h1 id="title">Displaying Changing Text as text log</h1>
+      <div id="container">
+        <div id="buttons">
+          <button id="start1" class="start">Start</button>
+          <button id="stop1" class="stop">Stop</button>
+          <button id="reset1" class="reset">Reset</button>
+        </div>
+        <div id="content">
+          <h1 id="name1">JavaScript is a single-threaded language !</h1>
+          <div class="logs" id="logs"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    // setTimeout(call back), clearTimeout(call back), setInterval(call back), clearInterval(call back)
+
+    const start = document.getElementById("start");
+    const stop = document.getElementById("stop");
+    const reset = document.getElementById("reset");
+    const start1 = document.getElementById("start1");
+    const stop1 = document.getElementById("stop1");
+    const reset1 = document.getElementById("reset1");
+    const logs = document.getElementById("logs");
+    const newText = document.getElementById("name");
+    const newText1 = document.getElementById("name1");
+
+    let intervalId;
+    let intervalId1;
+
+    // const sayName = function () {
+    //   console.log(
+    //     "JS is also an Async language!",
+    //     new Date().toLocaleTimeString(),
+    //   );
+    // };
+
+    const changeText = function () {
+      newText.innerHTML = `JS is also an Async language! [${new Date().toLocaleTimeString()}]`;
+    };
+
+    start.addEventListener("click", function () {
+      if (!intervalId) {
+        // console.log("Started", new Date().toLocaleTimeString());
+        intervalId = setInterval(changeText, 1000);
+      }
+    });
+
+    stop.addEventListener("click", function () {
+      //   console.log("Stopped", new Date().toLocaleTimeString());
+      clearInterval(intervalId);
+      intervalId = null;
+    });
+
+    reset.addEventListener("click", function () {
+      //   console.log("Reset", new Date().toLocaleTimeString());
+      clearInterval(intervalId);
+      intervalId = null;
+      newText.innerHTML = "JavaScript is a single-threaded language !";
+    });
+
+    const changeText1 = function () {
+      const h1 = document.createElement("h1");
+      h1.innerHTML = `JS is also an Async language! [${new Date().toLocaleTimeString()}]`;
+      logs.appendChild(h1);
+      logs.scrollTop = logs.scrollHeight;
+    };
+
+    start1.addEventListener("click", function () {
+      if (!intervalId1) {
+        intervalId1 = setInterval(changeText1, 1000);
+      }
+    });
+
+    stop1.addEventListener("click", function () {
+      clearInterval(intervalId1);
+      intervalId1 = null;
+    });
+
+    reset1.addEventListener("click", function () {
+      clearInterval(intervalId1);
+      intervalId1 = null;
+      const a = (logs.innerHTML = "");
+      console.log(a);
+    });
+  </script>
+
+  <!-- reset methods : logs.replaceChildren(); while (logs.firstChild) {
+  logs.removeChild(logs.firstChild);} -->
+</html>

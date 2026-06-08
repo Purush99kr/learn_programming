@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async Code Concepts | one</title>
+    <style>
+      body {
+        background-color: #2f2f2f;
+        color: #fff;
+      }
+      #stop {
+        background-color: #69ca08;
+        color: #faf4f4;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="name">Purushottam Kumar Singh</h1>
+    <button id="stop">Stop</button>
+  </body>
+  <script>
+    // setTimeout(call back), clearTimeout(call back), setInterval(call back)
+
+    const sayName = function () {
+      console.log("Purushottam Kumar");
+    };
+
+    const setName = function () {
+      document.getElementById("name").innerHTML = "Kunwar Nikhil Singh";
+    };
+
+    setTimeout(sayName, 2000);
+    const stopName = setTimeout(setName, 2000); //will change the name present inside H1 after 2 sec
+
+    // stop the name changing by clicking over stop button before 2 sec
+    document.querySelector("#stop").addEventListener("click", (e) => {
+      clearTimeout(stopName);
+      console.log(`STOPPED`);
+    });
+  </script>
+</html>
