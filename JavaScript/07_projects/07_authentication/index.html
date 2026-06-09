@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div id="container">
+        <h1 class="title">Login Form</h1>
+        <form action="" id="form">
+          <div>
+            <label for="username">Username</label>
+            <input
+              type="text"
+              placeholder="Enter username"
+              name="username"
+              id="username"
+            />
+            <p class="error"></p>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input
+              type="text"
+              placeholder="Enter email"
+              name="email"
+              id="email"
+            />
+          </div>
+          <p class="error"></p>
+          <div>
+            <label for="password">Password</label>
+            <input
+              type="text"
+              placeholder="enter password"
+              name="password"
+              id="password"
+            />
+          </div>
+          <p class="error"></p>
+          <div>
+            <label for="confirmpassword">Confirm Password</label>
+            <input
+              type="text"
+              placeholder="confirm password"
+              name="confirmpassword"
+              id="confirmPassword"
+            />
+          </div>
+          <p class="error"></p>
+          <button type="submit">Login</button>
+          <button type="button" id="reset">Reset</button>
+        </form>
+      </div>
+      <div id="container2">
+        <h1 id="output">Output</h1>
+        <div id="formValue">
+          <p id="name"></p>
+          <p id="mail"></p>
+          <p id="key"></p>
+          <p id="ckey"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
