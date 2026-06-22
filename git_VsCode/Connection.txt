@@ -51,6 +51,7 @@ Commands to initialize repo and push the codes:
     3. git add .
     4. git commit -m "commit message"
     5. git branch -M main
-    6. git push -u origin main
+    6. git remote add origin git@github.com:Purush99kr/<repository_name>
+    7. git push --set-upstream origin main
 
 After running the above commands, your code folder with each files will be pushed over github inside a dedicated directory.
